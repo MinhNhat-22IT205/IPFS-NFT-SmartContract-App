@@ -1,5 +1,5 @@
 async function main() {
-  const IPFSStorage = await ethers.getContractFactory("IPFSNFT");
+  const IPFSStorage = await ethers.getContractFactory("SimpleMarketplace");
   const contract = await IPFSStorage.deploy();
   await contract.waitForDeployment();
   const address = await contract.getAddress();
